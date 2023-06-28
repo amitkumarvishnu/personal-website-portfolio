@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=poppins:wght@400;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'Monsterrat',sans-serif;
+}
+
+:root{
+    --primar-color: #fff;
+    --primary-shade: #f7f5f2;
+    --secondary-color:#000;
+    --secondary-shade:#4b4c4c;
+    --red-color:#d40700;
+    --red-shade:#b20600;
+    --accent-color:#ffee63;
+}
+
+ul li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* header section */
+
+header{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg,rgba(2,0,36,1)0%,rgb(50, 50, 1)35%,rgba(0,212,255,1)100%);
+    background: linear-gradient(to right,#040404,#242424,#656565);
+    color: var(--primar-color);
+}
+
+.nav-bar{
+    padding: 30px 0;
+}
+
+span{
+    color: var(--red-color);
+}
+
+ul li a{
+    margin: 0 10px;
+    padding: 0 5px;
+    color: var(--accent-color);
+    font-size: 18px;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li a::before{
+    content: '';
+    width: 0;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    height: 2px;
+    background-color: var(--primar-color);
+    transition: 0.6s ease;
+}
+
+ul li a:hover::before{
+    width: 100%;
+}
+
+/* button */
+.btn{
+    width: 100px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: var(--red-color);
+    color: var(--primar-color);
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 0 5px;
+    font-weight: 500;
+    
+}
+
+.btn:hover{
+    background-color: var(--red-shade);
+    color: var(--primary-shade);
+    border: 2px solid var(--red-color);
+}
+
+
+.content{
+    height: 90vh;
+    position: relative;
+}
+
+.right img{
+    border-radius: 70%;
+    width: 72%;
+    margin-bottom: 15%;
+    left: 43%;
+    position: relative;
+    z-index: 999;
+    cursor: pointer;
+    transition: 0.3sec ease;
+}
+.right img:hover{
+    filter:drop-shadow(16px 5px 20px burlywood);
+}
+
+h4,p{
+    font-family: 'poppins',sans-serif;
+}
+
+.color-box{
+    width: 400px;
+    height:350px;
+    border: 5px solid red;
+    transform: rotate(48deg);
+    position: absolute;
+    top: 120px;
+    right: 10px;
+}
+
+/*About sec  */
+
+.about-me-sec{
+    min-height: 100vh;
+    background-color: var(--secondary-shade);
+    color: var(--primar-color);
+}
+
+.about-me-sec hr{
+    border: 2px solid red;
+    margin-bottom: 2rem;
+}
+
+.about-content ul{
+    margin-top: 25px;
+    margin-bottom: 10px;
+
+}
+
+.about-content span{
+    color: #C6DCE4;
+}
+
+.dot{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 10px 5px;
+    cursor: pointer;
+}
+
+
+.dot-w{
+    background-color: var(--primar-color);
+}
+.dot-b{
+    background-color: var(--secondary-color);
+}
+.dot-ws{
+    background-color: var(--primary-shade);
+}
+.dot-bs{
+    background-color: #C6DCE4;
+}
+.dot-a{
+    background-color: var(--accent-color);
+}
+
+.about-content h3{
+    left: 40%;
+}
+
+/* education section */
+
+.education-sec{
+    height: 80vh;
+    background-color: var(--secondary-color);
+    color: var(--primar-color);
+}
+
+.education{
+    padding: 0 50px 0 50px;
+    
+}
+
+.education-details{
+    border-bottom:  2px dotted var(--red-color);
+    padding-bottom: 20px;
+    margin-top: 180px;
+}
+
+.education-details h3{
+    font-size: 22px;
+    font-weight: 200;
+    margin: 10px 0;
+    color: blueviolet;
+}
+
+.col p{
+    padding-top: 30px;
+    color: burlywood;   
+}
+
+.col h5{
+    font-size: 13px;
+    font-weight: 200;
+    color: cornsilk;
+}
+
+.personal-info-sec{
+    height: 50vh;
+    background-color: darkgray;
+    padding: 35px 0;
+}
+
+.personal-info-sec h3{
+    color: var(--secondary-shade);
+}
+
+.Personal-info-details{
+    padding-top: 4rem;
+}
+
+.personal-info-details h5{
+    font-size: 16px;
+    font-weight: 600;
+    margin: 15px 0;
+}
+
+.left-sec{
+    margin-top: 100px;
+    font-size: 14px;
+}
+
+.center-sec{
+    margin-top: 100px;
+    font-size: 14px;
+}
+
+.right-sec{
+    margin-top: 100px;
+    font-size: 14px;
+}
+
+footer{
+    background-color: var(--secondary-shade);
+    padding: 10px 0;
+    color: burlywood;
+
+}
+
+
+
+
+
+
+
+
+
+
+
